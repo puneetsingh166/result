@@ -3,7 +3,7 @@ on: [push]
 
 jobs:
   amd64:
-    name: Master-Node
+    name: Master-NodE
     runs-on: ubuntu-latest
     if: github.ref != 'refs/heads/config'
     steps:
