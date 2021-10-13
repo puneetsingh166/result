@@ -26,7 +26,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build and push master-cosmos-validator-node
-        run: docker buildx build --tag  leeway321/master-cosmos-validator-node --file  deploy/master-cosmos-orchestrator-node/cosmos/Dockerfile --platform  linux/amd64 --progress  tty
+        run: docker buildx build --tag  leeway321/master-cosmos-validator-node --file  result/deploy/master-cosmos-orchestrator-node/cosmos/Dockerfile --platform  linux/amd64 --progress  tty
 
       - name: start master-cosmos-validator-node
         uses: garygrossgarten/github-action-ssh@release
